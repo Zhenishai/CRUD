@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form + Firebase</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1>Thanks for contributing to Zheni’s improvement! 😊</h1>
+<p>This small app is designed to practice working with objects, manipulating the DOM, and performing CRUD operations using Firebase</p>
+
+<h2>Login</h2>
+<input type="email" id="authEmail" placeholder="Your Email" />
+<input type="password" id="authPassword" placeholder="Password" />
+
+<button id="loginBtn">Login</button>
+<button id="registerBtn">Register</button>
+
+<p id="authMsg"></p>
+<hr />
+
+  <h2>User Info Form</h2>
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="surname" placeholder="Surname" />
+    <input type="number" id="age" placeholder="Age" />
+    <input type="text" id="color" placeholder="Favorite Color" />
+    <button type="submit">Save</button>
+  </form>
+  <p id="msg"></p>
+
+  <h3>All Users</h3>
+  <table id="usersTable">
+    <thead>
+      <tr><th>Name</th><th>Surname</th><th>Age</th><th>Color</th></tr>
+    </thead>
+    <tbody id="usersBody"></tbody>
+  </table>
+
+  <script type="module">
+    import "./app/auth.js";
+    import "./app/userForm.js";
+    import "./app/usersTable.js";
+  </script>
+</body>
+</html>
